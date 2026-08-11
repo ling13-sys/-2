@@ -13,15 +13,16 @@
     }
     /* 背景图强制铺满，层级压到最底层 */
 #bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: -9999;
-      /* 直接写死你仓库里的真实文件名 */
-      content: url("壁纸.jpg.jpg");
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -9999;
+  /* 标准背景图写法，兼容性拉满 */
+  background: url("壁纸.jpg.jpg") no-repeat center center;
+  background-size: cover;
+}
     .content {
       position: relative;
       z-index: 999;
